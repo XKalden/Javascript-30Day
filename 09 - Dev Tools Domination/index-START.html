@@ -18,28 +18,44 @@
     }
 
     // Regular
-
+    console.log('heels');
     // Interpolated
-
+    console.log('hsasdasd %s  string!', 'wowow i am new');
     // Styled
+
+    console.log('%c wow i am', 'background-color: blue; font-size:50px;')
 
     // warning!
 
-    // Error :|
-
-    // Info
-
-    // Testing
-
-    // clearing
-
+ 
     // Viewing DOM Elements
 
     // Grouping together
-
+      dogs.forEach(dog => {
+        console.group(`${dog.name}`);
+        console.log(`this is ${dog.name}`);
+        console.log(`${dog.name} is ${dog.age} years old`);
+        console.groupEnd(`${dog.name}`);
+      })
     // counting
 
+    console.count('hee');
+    console.count('hee');
+    console.count('heee');
+    console.count('hee');
+    console.count('hee');
+    console.count('heee');
+
     // timing
+
+    console.time('fetching data');
+    fetch('https://api.gethub.com/users/wesbos')
+      .then(data => data.json())
+      .then(data => {
+        console.timeEnd('fetching data');
+        console.log(data);
+      })
+
 
   </script>
 </body>

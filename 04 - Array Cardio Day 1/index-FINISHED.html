@@ -83,7 +83,7 @@
     const alpha = people.sort((lastOne, nextOne) => {
       const [aLast, aFirst] = lastOne.split(', ');
       const [bLast, bFirst] = nextOne.split(', ');
-      return aLast > bLast ? 1 : -1;
+      return aLast > bFirst ? 1 : -1;
     });
     console.log(alpha);
 
@@ -98,8 +98,8 @@
       obj[item]++;
       return obj;
     }, {});
-
-    console.log(transportation);
+  
+  console.log(transportation);
 
   </script>
 </body>
